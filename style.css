@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+}
+
+
+.deck {
+  list-style: none;
+  /* background-color: rgb(51, 255, 0); */
+  background: linear-gradient(160deg, rgb(19, 235, 116), blue);
+  width: 450px;
+  height: 450px;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 5px;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.753)
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  margin: 5px;
+  text-align: center;
+  font-size: 0;
+  float: left;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-top: 1em;
+}
+
+.flip{
+  cursor: default;
+  background-color: rgb(51, 255, 0);
+  font-size:2em;
+  transform: rotateY(0);
+}
+
+.match {
+  background-color: rgb(255, 0, 0);
+}
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?eqlnto');
+  src:  url('fonts/icomoon.eot?eqlnto#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?eqlnto') format('truetype'),
+    url('fonts/icomoon.woff?eqlnto') format('woff'),
+    url('fonts/icomoon.svg?eqlnto#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-headphones:before {
+  content: "\e910";
+}
+.icon-dice:before {
+  content: "\e915";
+}
+.icon-pacman:before {
+  content: "\e916";
+}
+.icon-spades:before {
+  content: "\e917";
+}
+.icon-fire:before {
+  content: "\e9a9";
+}
+.icon-power:before {
+  content: "\e9b5";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
